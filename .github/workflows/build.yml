@@ -24,4 +24,4 @@ jobs:
         username: Mohammad-taradeh
         password: ${{secrets.GITHUB_TOKEN}}
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag ghcr.io/Mohammad-taradeh/express-docker:$(date +%s)
+      run: docker build . --file Dockerfile --tag ghcr.io/mohammad-taradeh/express-docker:$(date +%s)
