@@ -34,7 +34,7 @@ jobs:
       run: docker push ghcr.io/mohammad-taradeh/express-docker:${{ steps.image_version.outputs.gitsha }}
 
     - name: configure docker host
-      uses: khaledez/configure-docker-host
+      uses: khaledez/configure-docker-host@v1
       with:
         host: 15.188.55.115
         user: github
