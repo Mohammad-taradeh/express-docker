@@ -18,8 +18,8 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: set image version (tag)
-        id: image_version
-        run: echo "gitsha=$(git rev-parse --short HEAD)" >> $GITHUB_OUTPUT
+      id: image_version
+      run: echo "gitsha=$(git rev-parse --short HEAD)" >> $GITHUB_OUTPUT
 
     - name: Login to Reqistry 
       uses: docker/login-action@v3
