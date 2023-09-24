@@ -17,7 +17,8 @@ services:
     restart: always
 
   app:
-    image: ghcr.io/mohammad-taradeh/express-docker:57c8022
+    image: ghcr.io/mohammad-taradeh/express-docker:57c8022:$GIT_VERSION
+    restart: always
     environment:
       - PORT=80
       - DB_HOST=mysql
